@@ -1,0 +1,88 @@
+body{
+	font-family: 'PT Sans', sans-serif;
+}
+h1, h2, h3 ,h4, h5 {
+	font-weight: 700;
+	color:black;
+}
+#logo{
+	width: 43px;
+	height: 43px;
+}
+.logo{
+	margin-top: 7px;
+}
+ul, li{
+	display: inline;
+	margin-right: 5px
+	padding: 3px;
+	margin: 1px;
+}
+.header{
+	background-image: url(background.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.menu{
+	margin-top: 10px;
+}
+.menu_item{
+	margin: 40px;
+}
+.title{
+	padding-top: 50px;
+	padding-bottom: 70px;
+
+}
+.title_main{
+	font-size: 32px;
+	text-align: center;
+}
+.title_text{
+	font-size: 20px;
+	text-align: center;
+}
+img{
+	width: 220px;
+	height: 220px;
+	margin-left: 5px;
+	margin-bottom: 10px
+}
+img:hover{
+	opacity: 0.9;
+	width: 240px;
+	height: 240px;
+}
+.rotate:hover{
+	transition: all 0.9s ease;
+	transform: rotateZ(-360deg);
+}
+.circle:hover{
+	border-radius: 70%;
+	transition: all 0.5s ease; 
+}
+@keyframes swing{
+	15%{
+		transform: translateX(5px);
+	}
+	30%{
+		transform: translateX(-5px);
+	}
+	50%{
+		transform: translateX(3px);
+	}
+	65%{
+		transform: translateX(-3px);
+	}
+	80%{
+		transform: translateX(2px);
+	}
+	100%{
+		transform: translateX(0px);
+	}
+}
+.swaying:hover{
+	animation: swing 1.5s ease;
+	animation-iteration-count: 1;
+	transition: all 0.5 ease;
+}
